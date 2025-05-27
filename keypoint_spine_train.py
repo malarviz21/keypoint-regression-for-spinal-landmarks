@@ -14,9 +14,9 @@ import torchvision.transforms as transforms
 from torch.utils.data import Dataset, DataLoader
 
 
-IMAGE_DIR = "C:/Users/Malar/Downloads/OneDrive_2025-04-16/HiCura Medical Take Home Dataset/images/train"
-VAL_DIR = "C:/Users/Malar/Downloads/OneDrive_2025-04-16/HiCura Medical Take Home Dataset/images/train/val"
-ANN_PATH = "C:/Users/Malar/Downloads/OneDrive_2025-04-16/HiCura Medical Take Home Dataset/frame_annotations.json"
+IMAGE_DIR = "/images/train"
+VAL_DIR = "/images/train/val"
+ANN_PATH = "/frame_annotations.json"
 
 # —————— Load annotations & compute priors ——————
 with open(ANN_PATH) as f:
