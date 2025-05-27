@@ -12,8 +12,8 @@ import cv2
 
 from keypoint_spine_train import KeypointRegressionModel, UltrasoundKeypointDataset
 
-TEST_DIR = "C:/Users/Malar/Downloads/OneDrive_2025-04-16/HiCura Medical Take Home Dataset/images/test"
-ANN_PATH = "C:/Users/Malar/Downloads/OneDrive_2025-04-16/HiCura Medical Take Home Dataset/frame_annotations.json"
+TEST_DIR = "/images/test"
+ANN_PATH = "/frame_annotations.json"
 
 
 def evaluate(model, loader, line_thresh=25, iou_thresh=0.5):
@@ -124,7 +124,7 @@ def visualize_sample(model, image_path, transform, all_annots):
 if __name__ == "__main__":
 
     with open(
-            "C:/Users/Malar/Downloads/OneDrive_2025-04-16/HiCura Medical Take Home Dataset/frame_annotations.json") as f:
+            "/frame_annotations.json") as f:
         all_annots = json.load(f)
 
     device = torch.device("cpu")
@@ -147,6 +147,6 @@ if __name__ == "__main__":
 
     evaluate(model, test_loader, line_thresh=25, iou_thresh=0.5)
     visualize_sample(model,
-                     "C:/Users/Malar/Downloads/OneDrive_2025-04-16/HiCura Medical Take Home Dataset/images/test/Image_93.png",
+                     "/images/test/Image_93.png",
                      test_tf,
                      all_annots)
