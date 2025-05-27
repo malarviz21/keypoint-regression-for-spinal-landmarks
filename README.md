@@ -17,8 +17,9 @@ Real-time constraints:
 <img width="334" alt="image" src="https://github.com/user-attachments/assets/645271ad-be81-4a17-9c4a-0be5ca8a8403" />
 
 
-**Dataset and Annotations:**
 
+
+**Dataset and Annotations:**
 Data Collection: Transverse-view ultrasound frames in .png image format.
 Split: 80% train with validation, 20% test
 Annotations: frame_annotations.json contains:
