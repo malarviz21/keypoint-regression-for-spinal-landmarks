@@ -31,3 +31,5 @@ Format: [["MID","line",[[x1,y1],[x2,y2]]], …]
   ["MID","line",[[330,88],[331,388]]],
   ["EPI","line",[[272,224],[381,224]]]
 ]
+
+**Loss evaluation inspired from the paper** - https://arxiv.org/abs/1705.07115
